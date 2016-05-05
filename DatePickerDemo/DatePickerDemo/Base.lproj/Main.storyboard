@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="IjD-wf-Ziw">
+                                <rect key="frame" x="0.0" y="20" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="478221738.04664999">
+                                    <!--2016-02-26 23:22:18 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EJ-Fq-JeC">
+                                <rect key="frame" x="241" y="261" width="119" height="30"/>
+                                <state key="normal" title="What day is that?"/>
+                                <connections>
+                                    <action selector="displayDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="miA-yY-hTZ"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Fm-Dv-M8e">
+                                <rect key="frame" x="0.0" y="311" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Uq6-vW-qEE"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7S8-bh-Al4"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0EJ-Fq-JeC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2bS-lZ-vUE"/>
+                            <constraint firstItem="IjD-wf-Ziw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="88l-Xn-pgs"/>
+                            <constraint firstItem="6Fm-Dv-M8e" firstAttribute="top" secondItem="0EJ-Fq-JeC" secondAttribute="bottom" constant="20" id="PsM-7J-IEi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IjD-wf-Ziw" secondAttribute="trailing" constant="-20" id="ZEL-Df-hIK"/>
+                            <constraint firstItem="0EJ-Fq-JeC" firstAttribute="top" secondItem="IjD-wf-Ziw" secondAttribute="bottom" constant="25" id="b9P-e6-8If"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Fm-Dv-M8e" secondAttribute="trailing" constant="-20" id="orM-O2-vte"/>
+                            <constraint firstItem="6Fm-Dv-M8e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="vKT-Xm-UUH"/>
+                            <constraint firstItem="IjD-wf-Ziw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zic-t4-6Hh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="IjD-wf-Ziw" id="UgV-JF-wQz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

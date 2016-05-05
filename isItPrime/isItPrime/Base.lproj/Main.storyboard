@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="isItPrime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-YH-NSf">
+                                <rect key="frame" x="284" y="20" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-dq-7r1">
+                                <rect key="frame" x="252" y="85" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="3RW-9A-puh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="x12-B3-Gmy">
+                                <rect key="frame" x="26" y="142" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="qaG-vj-Pf0"/>
+                                </constraints>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCS-Ce-3ha">
+                                <rect key="frame" x="150" y="142" width="301" height="30"/>
+                                <state key="normal" title="Is it prime?"/>
+                                <connections>
+                                    <action selector="checkPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1U-3H-LYA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dj6-dq-7r1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7W3-5q-PZF"/>
+                            <constraint firstItem="x12-B3-Gmy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="8Ge-Ic-Vct"/>
+                            <constraint firstItem="QBp-YH-NSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BuD-Ha-FUn"/>
+                            <constraint firstItem="DCS-Ce-3ha" firstAttribute="top" secondItem="dj6-dq-7r1" secondAttribute="bottom" constant="27" id="DoP-bU-QYO"/>
+                            <constraint firstItem="x12-B3-Gmy" firstAttribute="centerY" secondItem="DCS-Ce-3ha" secondAttribute="centerY" id="dLn-NJ-Wea"/>
+                            <constraint firstItem="dj6-dq-7r1" firstAttribute="top" secondItem="QBp-YH-NSf" secondAttribute="bottom" constant="44" id="mJ1-qa-nis"/>
+                            <constraint firstItem="DCS-Ce-3ha" firstAttribute="leading" secondItem="x12-B3-Gmy" secondAttribute="trailing" constant="8" id="roS-UE-S4t"/>
+                            <constraint firstItem="QBp-YH-NSf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="t9B-VT-PMD"/>
+                            <constraint firstItem="dj6-dq-7r1" firstAttribute="centerX" secondItem="DCS-Ce-3ha" secondAttribute="centerX" id="uKd-OT-V3Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="dj6-dq-7r1" id="E8y-ej-yxG"/>
+                        <outlet property="resultLabel" destination="QBp-YH-NSf" id="1eV-A0-C12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
