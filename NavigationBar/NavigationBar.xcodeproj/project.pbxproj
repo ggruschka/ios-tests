@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C6397491CDB827A00917DA2 /* ItemCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6397481CDB827A00917DA2 /* ItemCreationViewController.swift */; };
 		99BE6D6A1CDAD35A008C6073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE6D691CDAD35A008C6073 /* AppDelegate.swift */; };
 		99BE6D6C1CDAD35A008C6073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE6D6B1CDAD35A008C6073 /* ViewController.swift */; };
 		99BE6D6F1CDAD35A008C6073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BE6D6D1CDAD35A008C6073 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C6397481CDB827A00917DA2 /* ItemCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCreationViewController.swift; sourceTree = "<group>"; };
 		99BE6D661CDAD35A008C6073 /* NavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BE6D691CDAD35A008C6073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99BE6D6B1CDAD35A008C6073 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				99BE6D701CDAD35A008C6073 /* Assets.xcassets */,
 				99BE6D721CDAD35A008C6073 /* LaunchScreen.storyboard */,
 				99BE6D751CDAD35A008C6073 /* Info.plist */,
+				3C6397481CDB827A00917DA2 /* ItemCreationViewController.swift */,
 			);
 			path = NavigationBar;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99BE6D6C1CDAD35A008C6073 /* ViewController.swift in Sources */,
+				3C6397491CDB827A00917DA2 /* ItemCreationViewController.swift in Sources */,
 				99BE6D6A1CDAD35A008C6073 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				99BE6D7A1CDAD35A008C6073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

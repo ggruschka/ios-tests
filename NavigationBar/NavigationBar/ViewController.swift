@@ -8,10 +8,40 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+var dataSet = [String]()
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var timer = NSTimer()
     var time = 0
 
+    @IBOutlet weak var itemList: UITableView!
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSet.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        
+        cell.textLabel?.text = dataSet[indexPath.row]
+        
+        return cell
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        itemList.reloadData()
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete{
+            dataSet.removeAtIndex(indexPath.row)
+            
+            itemList.reloadData()
+            
+            NSUserDefaults.standardUserDefaults().setObject(dataSet, forKey: "dataSet")
+
+        }
+    }
    
     @IBOutlet weak var timerLabel: UILabel!
 
@@ -39,10 +69,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
- 
-        
-        
+        if NSUserDefaults.standardUserDefaults().objectForKey("dataSet") != nil {
+            dataSet = NSUserDefaults.standardUserDefaults().objectForKey("dataSet")! as! [String]
+        }
         
         // Do any additional setup after loading the view, typically from a nib.
     }
