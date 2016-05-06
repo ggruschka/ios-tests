@@ -13,6 +13,7 @@
 		99BE6D6F1CDAD35A008C6073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BE6D6D1CDAD35A008C6073 /* Main.storyboard */; };
 		99BE6D711CDAD35A008C6073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BE6D701CDAD35A008C6073 /* Assets.xcassets */; };
 		99BE6D741CDAD35A008C6073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BE6D721CDAD35A008C6073 /* LaunchScreen.storyboard */; };
+		99BE6DD61CDC025A008C6073 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE6DD51CDC025A008C6073 /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		99BE6D701CDAD35A008C6073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99BE6D731CDAD35A008C6073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99BE6D751CDAD35A008C6073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99BE6DD51CDC025A008C6073 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				99BE6D721CDAD35A008C6073 /* LaunchScreen.storyboard */,
 				99BE6D751CDAD35A008C6073 /* Info.plist */,
 				3C6397481CDB827A00917DA2 /* ItemCreationViewController.swift */,
+				99BE6DD51CDC025A008C6073 /* WeatherViewController.swift */,
 			);
 			path = NavigationBar;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99BE6D6C1CDAD35A008C6073 /* ViewController.swift in Sources */,
+				99BE6DD61CDC025A008C6073 /* WeatherViewController.swift in Sources */,
 				3C6397491CDB827A00917DA2 /* ItemCreationViewController.swift in Sources */,
 				99BE6D6A1CDAD35A008C6073 /* AppDelegate.swift in Sources */,
 			);
